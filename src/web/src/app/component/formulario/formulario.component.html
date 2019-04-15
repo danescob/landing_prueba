@@ -1,3 +1,129 @@
-<p>
-  formulario works!
-</p>
+<div class="container">
+    <form class="form">
+        <div class="row">
+            <div class="col-md-6">
+                <input type="text" require name="nombres" id="nombres" placeholder="nombres" class="form-control">
+            </div>
+            <div class="col-md-6">
+                <input type="text" require name="apellidos" id="apellidos" placeholder="apellidos" class="form-control">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <input type="text" require name="celular" id="celular" placeholder="Numero de celular" class="form-control">
+            </div>
+            <div class="col-md-6">
+                <span>Genero: </span>
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-secondary active">
+                        <input type="radio" name="genero" id="genero" autocomplete="off" value="m" checked>M
+                    </label>
+                    <label class="btn btn-secondary">
+                        <input type="radio" name="genero" id="genero" autocomplete="off" value="f" >F
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <input type="text" require name="correo" id="correo" placeholder="Correo Electronico" class="form-control">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <span>Vehiculo Actual</span>
+            </div>
+            <div class="col-md-6">
+                <input type="text" require name="marca" id="marca" placeholder="Marca" class="form-control">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <input type="text" require name="linea" id="linea" placeholder="Linea" class="form-control">
+            </div>
+            <div class="col-md-6">
+                <input type="text" require name="modelo" id="modelo" placeholder="Modelo" class="form-control">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <span>Tiene intencion de cambiar su vehiculo o adquirir uno nuevo? </span>
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-secondary active">
+                        <input type="radio" name="intencion" id="intencion" autocomplete="off" value="s" checked>Si
+                    </label>
+                    <label class="btn btn-secondary">
+                        <input type="radio" name="intencion" id="intencion" autocomplete="off" value="n" >No
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <span>¿En Cuanto tiempo pienzas estrenar o adquirir uno nuevo?</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-secondary active">
+                        <input type="radio" name="timepoIntencion" id="timepoIntencion" autocomplete="off" value="3" checked>1 - 3 Meses
+                    </label>
+                    <label class="btn btn-secondary">
+                        <input type="radio" name="timepoIntencion" id="timepoIntencion" autocomplete="off" value="6" >3 - 6 meses
+                    </label>
+                    <label class="btn btn-secondary">
+                        <input type="radio" name="timepoIntencion" id="timepoIntencion" autocomplete="off" value="9" >más de 6
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <span>¿En que vehiculo esta interesado?</span>
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-secondary active">
+                        <input type="radio" name="tipoIntencion" id="tipoIntencion" autocomplete="off" value="1" checked>Bus
+                    </label>
+                    <label class="btn btn-secondary">
+                        <input type="radio" name="tipoIntencion" id="tipoIntencion" autocomplete="off" value="2" >Sedan
+                    </label>
+                    <label class="btn btn-secondary">
+                        <input type="radio" name="tipoIntencion" id="tipoIntencion" autocomplete="off" value="3" >Camion
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <span>¿Requiere financiacion sin intereses?</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-secondary active">
+                        <input type="radio" name="financiacion" id="financiacion" autocomplete="off" value="12" checked>12 Meses
+                    </label>
+                    <label class="btn btn-secondary">
+                        <input type="radio" name="financiacion" id="financiacion" autocomplete="off" value="36" >36 Meses
+                    </label>
+                    <label class="btn btn-secondary">
+                        <input type="radio" name="financiacion" id="financiacion" autocomplete="off" value="90" >60 Meses
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <input type="checkbox" require name="news" id="news"><span>Autorizo a Aspen Truks a que me envie informacion comercial via E-mail, telefono, mensajes de texto, correo. Conozca más sobre nuestra Politica de Privacidad, <a href='#'>haciendo click aqui</a></span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8"></div>
+            <div class="col-md-4">
+                <input type="button" value="enviar" class="btn btn-secondary" (click)="enviar(this)">
+            </div>
+        </div>
+    </form>
+</div>

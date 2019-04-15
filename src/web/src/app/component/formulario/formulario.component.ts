@@ -12,4 +12,8 @@ export class FormularioComponent implements OnInit {
   ngOnInit() {
   }
 
+  enviar(componente: any){
+
+  }
+
 }
